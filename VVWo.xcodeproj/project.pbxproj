@@ -3,31 +3,66 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		394C951F237773DC006905F1 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394C951E237773DC006905F1 /* MapView.swift */; };
+		394C95212377865E006905F1 /* RouteDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 394C95202377865E006905F1 /* RouteDetail.swift */; };
 		395DA033237711BA003BE0AC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA032237711BA003BE0AC /* AppDelegate.swift */; };
 		395DA035237711BA003BE0AC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA034237711BA003BE0AC /* SceneDelegate.swift */; };
-		395DA037237711BA003BE0AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA036237711BA003BE0AC /* ContentView.swift */; };
+		395DA037237711BA003BE0AC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA036237711BA003BE0AC /* SearchView.swift */; };
 		395DA039237711BB003BE0AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395DA038237711BB003BE0AC /* Assets.xcassets */; };
 		395DA03C237711BB003BE0AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 395DA03B237711BB003BE0AC /* Preview Assets.xcassets */; };
 		395DA03F237711BB003BE0AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 395DA03D237711BB003BE0AC /* LaunchScreen.storyboard */; };
+		395DA0472377132D003BE0AC /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA0462377132D003BE0AC /* API.swift */; };
+		395DA04F23771993003BE0AC /* VVWoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA04E23771993003BE0AC /* VVWoTests.swift */; };
+		395DA05723771D43003BE0AC /* SpeechRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA05623771D43003BE0AC /* SpeechRecognizer.swift */; };
+		395DA05923774F87003BE0AC /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA05823774F87003BE0AC /* ActivityIndicator.swift */; };
+		395DA05B23775795003BE0AC /* ResultsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 395DA05A23775795003BE0AC /* ResultsList.swift */; };
+		395DA05E23775806003BE0AC /* DVB in Frameworks */ = {isa = PBXBuildFile; productRef = 395DA05D23775806003BE0AC /* DVB */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		395DA05123771993003BE0AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 395DA027237711BA003BE0AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 395DA02E237711BA003BE0AC;
+			remoteInfo = VVWo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		394C951E237773DC006905F1 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		394C95202377865E006905F1 /* RouteDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteDetail.swift; sourceTree = "<group>"; };
 		395DA02F237711BA003BE0AC /* VVWo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VVWo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		395DA032237711BA003BE0AC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		395DA034237711BA003BE0AC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		395DA036237711BA003BE0AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		395DA036237711BA003BE0AC /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		395DA038237711BB003BE0AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		395DA03B237711BB003BE0AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		395DA03E237711BB003BE0AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		395DA040237711BB003BE0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395DA0462377132D003BE0AC /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		395DA04C23771993003BE0AC /* VVWoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VVWoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		395DA04E23771993003BE0AC /* VVWoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VVWoTests.swift; sourceTree = "<group>"; };
+		395DA05023771993003BE0AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		395DA05623771D43003BE0AC /* SpeechRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechRecognizer.swift; sourceTree = "<group>"; };
+		395DA05823774F87003BE0AC /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		395DA05A23775795003BE0AC /* ResultsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		395DA02C237711BA003BE0AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395DA05E23775806003BE0AC /* DVB in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395DA04923771993003BE0AC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				395DA031237711BA003BE0AC /* VVWo */,
+				395DA04D23771993003BE0AC /* VVWoTests */,
 				395DA030237711BA003BE0AC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				395DA02F237711BA003BE0AC /* VVWo.app */,
+				395DA04C23771993003BE0AC /* VVWoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,7 +95,13 @@
 			children = (
 				395DA032237711BA003BE0AC /* AppDelegate.swift */,
 				395DA034237711BA003BE0AC /* SceneDelegate.swift */,
-				395DA036237711BA003BE0AC /* ContentView.swift */,
+				395DA0462377132D003BE0AC /* API.swift */,
+				395DA05623771D43003BE0AC /* SpeechRecognizer.swift */,
+				395DA05823774F87003BE0AC /* ActivityIndicator.swift */,
+				394C951E237773DC006905F1 /* MapView.swift */,
+				395DA036237711BA003BE0AC /* SearchView.swift */,
+				395DA05A23775795003BE0AC /* ResultsList.swift */,
+				394C95202377865E006905F1 /* RouteDetail.swift */,
 				395DA038237711BB003BE0AC /* Assets.xcassets */,
 				395DA03D237711BB003BE0AC /* LaunchScreen.storyboard */,
 				395DA040237711BB003BE0AC /* Info.plist */,
@@ -73,6 +116,15 @@
 				395DA03B237711BB003BE0AC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		395DA04D23771993003BE0AC /* VVWoTests */ = {
+			isa = PBXGroup;
+			children = (
+				395DA04E23771993003BE0AC /* VVWoTests.swift */,
+				395DA05023771993003BE0AC /* Info.plist */,
+			);
+			path = VVWoTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,9 +143,30 @@
 			dependencies = (
 			);
 			name = VVWo;
+			packageProductDependencies = (
+				395DA05D23775806003BE0AC /* DVB */,
+			);
 			productName = VVWo;
 			productReference = 395DA02F237711BA003BE0AC /* VVWo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		395DA04B23771993003BE0AC /* VVWoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 395DA05323771993003BE0AC /* Build configuration list for PBXNativeTarget "VVWoTests" */;
+			buildPhases = (
+				395DA04823771993003BE0AC /* Sources */,
+				395DA04923771993003BE0AC /* Frameworks */,
+				395DA04A23771993003BE0AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				395DA05223771993003BE0AC /* PBXTargetDependency */,
+			);
+			name = VVWoTests;
+			productName = VVWoTests;
+			productReference = 395DA04C23771993003BE0AC /* VVWoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -108,6 +181,10 @@
 					395DA02E237711BA003BE0AC = {
 						CreatedOnToolsVersion = 11.2.1;
 					};
+					395DA04B23771993003BE0AC = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 395DA02E237711BA003BE0AC;
+					};
 				};
 			};
 			buildConfigurationList = 395DA02A237711BA003BE0AC /* Build configuration list for PBXProject "VVWo" */;
@@ -119,11 +196,15 @@
 				Base,
 			);
 			mainGroup = 395DA026237711BA003BE0AC;
+			packageReferences = (
+				395DA05C23775806003BE0AC /* XCRemoteSwiftPackageReference "DVB" */,
+			);
 			productRefGroup = 395DA030237711BA003BE0AC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				395DA02E237711BA003BE0AC /* VVWo */,
+				395DA04B23771993003BE0AC /* VVWoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +220,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		395DA04A23771993003BE0AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -146,13 +234,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				395DA05723771D43003BE0AC /* SpeechRecognizer.swift in Sources */,
+				394C95212377865E006905F1 /* RouteDetail.swift in Sources */,
+				394C951F237773DC006905F1 /* MapView.swift in Sources */,
 				395DA033237711BA003BE0AC /* AppDelegate.swift in Sources */,
+				395DA05B23775795003BE0AC /* ResultsList.swift in Sources */,
 				395DA035237711BA003BE0AC /* SceneDelegate.swift in Sources */,
-				395DA037237711BA003BE0AC /* ContentView.swift in Sources */,
+				395DA0472377132D003BE0AC /* API.swift in Sources */,
+				395DA05923774F87003BE0AC /* ActivityIndicator.swift in Sources */,
+				395DA037237711BA003BE0AC /* SearchView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		395DA04823771993003BE0AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				395DA04F23771993003BE0AC /* VVWoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		395DA05223771993003BE0AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 395DA02E237711BA003BE0AC /* VVWo */;
+			targetProxy = 395DA05123771993003BE0AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		395DA03D237711BB003BE0AC /* LaunchScreen.storyboard */ = {
@@ -320,6 +430,46 @@
 			};
 			name = Release;
 		};
+		395DA05423771993003BE0AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU85FER47E;
+				INFOPLIST_FILE = VVWoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.VVWoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VVWo.app/VVWo";
+			};
+			name = Debug;
+		};
+		395DA05523771993003BE0AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HU85FER47E;
+				INFOPLIST_FILE = VVWoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.kilian.VVWoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VVWo.app/VVWo";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -341,7 +491,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		395DA05323771993003BE0AC /* Build configuration list for PBXNativeTarget "VVWoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				395DA05423771993003BE0AC /* Debug */,
+				395DA05523771993003BE0AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		395DA05C23775806003BE0AC /* XCRemoteSwiftPackageReference "DVB" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kiliankoe/DVB";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		395DA05D23775806003BE0AC /* DVB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 395DA05C23775806003BE0AC /* XCRemoteSwiftPackageReference "DVB" */;
+			productName = DVB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 395DA027237711BA003BE0AC /* Project object */;
 }

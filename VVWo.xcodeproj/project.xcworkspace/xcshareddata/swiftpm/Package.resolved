@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "DVB",
+        "repositoryURL": "https://github.com/kiliankoe/DVB",
+        "state": {
+          "branch": "master",
+          "revision": "59a05489cd8c96f03f90de56949a40b47e951585",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
