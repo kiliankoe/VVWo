@@ -88,7 +88,7 @@ class API: ObservableObject {
                 origin = demoDefaultLoc
             }
             var destination = latestQuery.slots.first { $0.slotName == "location_destination" }?.value.value ?? demoDefaultLoc
-            if destination == "hause" {
+            if destination.lowercased() == "hause" {
                 destination = "Albertplatz"
             }
 
