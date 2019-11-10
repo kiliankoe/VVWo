@@ -144,7 +144,11 @@ struct SlotValue: Decodable {
 }
 
 
-extension Departure: Identifiable {}
+extension Departure: Identifiable {
+    public var id: String {
+        return "\(line) \(direction) \(String(describing: realTime))"
+    }
+}
 
 extension Route: Identifiable {
     public var id: Int {
