@@ -39,7 +39,7 @@ final class RouteMapView: NSObject, UIViewRepresentable {
         let polyline = MKPolyline(coordinates: mapPoints, count: mapPoints.count)
         mapView.addOverlay(polyline)
 
-        mapView.setVisibleMapRect(polyline.boundingMapRect, animated: false)
+        mapView.setVisibleMapRect(polyline.boundingMapRect, edgePadding: UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10), animated: false)
 
         return mapView
     }
