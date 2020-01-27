@@ -43,8 +43,8 @@ class API: ObservableObject {
             })
     }
 
-    // This is really icky :/
-    var monitorResponse: MonitorResponse?
+    // Holding both these references here is really icky :/
+    var monitorResponse: (stopName: String, departures: [Departure])?
     var routesResponse: RoutesResponse?
 
     func resetDVBResponses() {
@@ -75,8 +75,14 @@ class API: ObservableObject {
 
             Departure.monitor(stopWithName: location, allowedModes: allowedModes) { result in
                 guard let response = try? result.get() else { return }
+
+                var departures = response.departures
+                if let lineIdentifier = latestQuery.slots.first(where: { $0.slotName == "line_identifier" })?.value.value {
+                    departures = response.departures.filter { $0.line == lineIdentifier }
+                }
+
                 DispatchQueue.main.async {
-                    self.monitorResponse = response
+                    self.monitorResponse = (response.stopName, departures)
                     self.objectWillChange.send()
                 }
             }
