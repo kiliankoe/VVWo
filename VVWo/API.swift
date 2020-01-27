@@ -17,6 +17,8 @@ class API: ObservableObject {
         }
     }
 
+    var cancellable: AnyCancellable?
+
     func parse(query: String) {
         var request = URLRequest(url: self.baseURL.appendingPathComponent("query"))
         request.httpMethod = "POST"
@@ -26,22 +28,19 @@ class API: ObservableObject {
         request.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
         request.httpBody = "query=\(escapedQuery)".data(using: .utf8)
 
-        _ = URLSession.shared.dataTaskPublisher(for: request)
+        cancellable = URLSession.shared.dataTaskPublisher(for: request)
             .map { $0.data }
             .decode(type: QueryResponse.self, decoder: JSONDecoder())
             .receive(on: DispatchQueue.main)
             .sink(receiveCompletion: { completion in
-                switch completion {
-                case .finished:
-                    break
-                case .failure(let error):
+                if case let .failure(error) = completion {
                     print(error)
                     self.latestQuery = nil
                 }
-            }) { response in
+            }, receiveValue: { response in
                 print(response)
                 self.latestQuery = response
-            }
+            })
     }
 
     // This is really icky :/
