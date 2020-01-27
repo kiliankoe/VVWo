@@ -5,6 +5,20 @@ struct ResultsList: View {
 
     @EnvironmentObject var apiClient: API
 
+    func genericAnswerView(text: String, query: QueryResponse) -> AnyView {
+        AnyView(
+            VStack {
+                Text(text)
+                    .font(.title)
+                    .padding(.bottom)
+                Text(String(describing: query))
+                    .font(.caption)
+                Spacer()
+            }
+            .padding(.horizontal)
+        )
+    }
+
     var resultsList: some View {
         if let query = apiClient.latestQuery {
             switch query.intent.intentName {
@@ -22,18 +36,12 @@ struct ResultsList: View {
                     }
                     .navigationBarTitle("Verbindung")
                 )
+            case .disruption:
+                return genericAnswerView(text: "Störungsabfragen sind aktuell noch nicht möglich.", query: query)
+            case .search:
+                return genericAnswerView(text: "Suchabfragen sind aktuell noch nicht möglich.", query: query)
             default:
-                return AnyView(
-                    VStack {
-                        Text("Sorry, diese Art Abfrage ist in dieser Demo noch nicht möglich.")
-                            .font(.title)
-                            .padding(.bottom)
-                        Text(String(describing: query))
-                            .font(.caption)
-                        Spacer()
-                    }
-                    .padding(.horizontal)
-                )
+                return genericAnswerView(text: "Diese Art Abfrage ist in dieser Demo noch nicht möglich.", query: query)
             }
         } else {
             return AnyView(
