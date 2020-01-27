@@ -54,7 +54,7 @@ class API: ObservableObject {
 
     func getDVBData() {
         resetDVBResponses()
-        let demoDefaultLoc = "Sächsische Staats- und Unibibliothek"
+        let demoDefaultLoc = "Pirnaischer Platz"
 
         guard let latestQuery = latestQuery else { return }
         switch latestQuery.intent.intentName {
